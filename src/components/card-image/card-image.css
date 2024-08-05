@@ -1,0 +1,6 @@
+.photo-container {
+    padding: 50px;
+    background-color: var(--beirut-gray);
+    margin-right: auto;
+    margin-left: auto;
+}

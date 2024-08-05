@@ -1,0 +1,23 @@
+.footer-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    background-color: var(--beirut-black);
+    color: var(--beirut-white);
+}
+
+.copyright-container {
+    background-color: var(--beirut-black);
+    border-top: solid 1px var(--beirut-white);
+}
+
+a.custom-link {
+    color: var(--beirut-white);
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: var(--beirut-gray);
+    text-shadow: 0 0 11px var(--beirut-green);
+    cursor: pointer;
+}

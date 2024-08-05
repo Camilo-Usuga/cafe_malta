@@ -1,0 +1,157 @@
+.beirut-navbar {
+    background-color: var(--beirut-black);
+    overflow: hidden;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 20px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.brand-title {
+    display: flex;
+    align-items: center;
+    color: var(--beirut-white);
+    font-size: 1.5em;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    padding: 0 1em;
+}
+
+.navbar-links a {
+    color: var(--beirut-white);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.toggle-button {
+    color: var(--beirut-white);
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 25px;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.dropdown-content {
+    position: fixed;
+    left: 0;
+    top: 137px;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: var(--beirut-black);
+    z-index: 999;
+    opacity: 0.8;
+    transition: opacity 0.5s linear, visibility 0.5s linear;;
+}
+
+
+.dropdown-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-animation {
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--beirut-black);
+    padding: 20px;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 white,
+    1px -1px 0 white,
+    1px 1px 0 var(--beirut-white),
+    -1px 1px 0 white;
+    display: block;
+    text-align: left;
+    font-size: 1.9em;
+}
+
+.dropdown-content a:hover {
+    color: var(--beirut-white);
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 2s;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 185px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 190px;
+    }
+}
+

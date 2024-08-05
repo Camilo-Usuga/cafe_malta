@@ -1,0 +1,12 @@
+.footer-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: var(--beirut-black);
+    color: var(--beirut-white);
+}
+
+.copyright-container {
+    background-color: var(--beirut-black);
+    border-top: solid 1px var(--beirut-white);
+}
